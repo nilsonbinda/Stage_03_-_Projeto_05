@@ -1,0 +1,88 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+main{
+    width: 1440px;
+    height: 1024px;
+
+    margin: 0 auto;
+
+    background: url(assets/fundo.svg);
+
+}
+
+.grade{
+
+    margin: 0 auto;
+    padding-top: 225.97px;
+
+    display: grid;
+    grid-template-areas: "A B C D";
+    justify-items: center;
+    align-items: center;
+}
+
+.buraco{
+    width: 221.81px;
+    height: 168.11px;
+    background: url(assets/toupeira6.svg);
+
+}
+
+.buraco:hover{
+    animation: findmole 300ms;
+    /*background: url(assets/toupeira3.svg);*/
+}
+
+.buraco:active{
+    animation: killmole 700ms;
+}
+
+@keyframes findmole {
+
+    0%{
+        background: url(assets/toupeira1.svg); 
+    }
+    20%{
+        background: url(assets/toupeira2.svg);
+    }
+    40%{
+        background: url(assets/toupeira3.svg);
+    }
+    60%{
+        background: url(assets/toupeira4.svg);
+    }
+    80%{
+        background: url(assets/toupeira5.svg);
+    }
+    100%{
+        background: url(assets/toupeira6.svg);
+    }
+    
+}
+
+@keyframes killmole {
+
+    0%{
+        background: url(assets/Hit.svg); 
+    }
+    30%{
+        background: url(assets/Hurt1.svg);
+    }
+    60%{
+        background: url(assets/Hurt2.svg);
+    }
+    100%{
+        background: url(assets/Hurt3.svg);
+    }
+    
+}
+
+
